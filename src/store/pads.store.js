@@ -95,6 +95,7 @@ export default new Vuex.Store({
       // }
     },
     playPlay(state){
+      
       padsService.playSound(state.lastRecordForPlay)
     }
   },
