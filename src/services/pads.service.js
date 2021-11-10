@@ -12,7 +12,6 @@ const sounds = [
 ]
 
 
-
 export const padsService = {
     query,
     playSound,
@@ -30,7 +29,6 @@ function playSound(pads) {
         pad.audio.currentTime = 0;
         pad.audio.play();
     });
-    console.log("play...");
 }
 
 function stopSound(pads) {
@@ -38,8 +36,6 @@ function stopSound(pads) {
         console.log(pad, "stop");
         pad.audio.pause();
         pad.audio.currentTime = 0;
-        // clearInterval(interval);
-        // if (pad.isPlay) pad.isPlay = false;
+
     });
-    console.log(pads, "pad");
 }

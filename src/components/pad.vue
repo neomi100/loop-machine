@@ -15,22 +15,16 @@ export default {
   data() {
     return {
       isActive: false,
-      // active: this.pad.id,
     };
   },
 
   methods: {
     getPad() {
-      // const pad={...this.pad};
-      const pad=this.pad;
+      const pad = this.pad;
       pad.isPlay = !pad.isPlay;
       this.isActive = !this.isActive;
-      // this.active = `${this.pad.id}`;
       this.$emit("setAudio", pad);
-      console.log(pad.isPlay, this.pad.name);
-      // if (!this.pad.isPlay) this.pad.audio.pause();
     },
   },
-
 };
 </script>

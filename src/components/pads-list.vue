@@ -23,24 +23,15 @@ export default {
 
   methods: {
     setAudio(clickedPad) {
-        if (!clickedPad.isPlay) clickedPad.audio.pause();
-      this.padsForPlay=this.pads.map(pad=>pad.id===clickedPad.id? clickedPad:pad);
+      if (!clickedPad.isPlay) clickedPad.audio.pause();
+      this.padsForPlay = this.pads.map((pad) =>
+        pad.id === clickedPad.id ? clickedPad : pad
+      );
       this.padsForPlay = this.padsForPlay.filter((pad) => pad.isPlay);
-      console.log( clickedPad ,'pads for play');
-      // this.$emit("setAudio", this.padsForPlay);
-        this.$store.commit({ type: "setAudio", pads:this.padsForPlay });
-        //  if (!this.padsForPlay.length) this.$store.commit({ type: "stopSound" });
+      this.$store.commit({ type: "setAudio", pads: this.padsForPlay });
     },
   },
-  watch:{
-    padsForPlay:{
-      handler(currpadsForPlay){
-        this.$store.commit({ type: "recordSound" });
-console.log(`padsForPlay listt`, currpadsForPlay);
-      },
-      deep:true
-    }
-  },
+
   components: { pad },
 };
 </script>

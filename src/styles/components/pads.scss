@@ -17,52 +17,20 @@
     .pad-name {
         width: 42px;
         height: 10px;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         z-index: 2;
     }
     &::after {
         font-family: fa-solid;
         content: "\f51f";
         color: $clr3;
-        // color: #FBEAFF;
-        font-size: 100px;
-        // #00C9A6 הצבע לקלאס הדינאמי
+        font-size: 130px;
     }
- 
+
     &:hover {
-        // opacity: 0.5;
-        // border: 1px solid #fcf6fd;
         background-color: $clr5;
     }
 }
-.active{
-
-    background-color: cyan;
-    .ffk{
-        background-color: cyan;
-    }
-}
-.sbs{
-    background-color: cyan;
-}
-.bss{
-    background-color: cyan;
-}
-.egr{
-    background-color: cyan;
-}
-.ssh{
-    background-color: cyan;
-}
-.gtu{
-    background-color: cyan;
-}
-.mps{
-    background-color: cyan;
-}
-.pge{
-    background-color: cyan;
-}
-.ssr{
+.active {
     background-color: cyan;
 }

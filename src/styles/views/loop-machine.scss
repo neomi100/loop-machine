@@ -1,7 +1,8 @@
-.btns-power{
-padding: 7px;
-
-.btn-power {
+.btns-power {
+  padding: 7px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  .btn-power {
     background: none;
     border-radius: 50%;
     cursor: pointer;
@@ -9,44 +10,43 @@ padding: 7px;
     padding: 0.2rem 0.4rem;
     margin-left: 5px;
     &:hover {
-        background-color: $clr4;
+      background-color: $clr4;
     }
-}
+  }
 
-.btn-play {
-  &::after {
-    font-family: fa-solid;
-    content: '\f144';
-    color: #D5CABD;
-    font-size: 37px;
-  }  
-} 
-.play{
-background-color: #00C9A6;
-}
-.stop {
-  &::after {
-    font-family: fa-solid;
-    content: '\f28d';
-    color: $clr3;
-    font-size: 37px;
-  }  
-} 
-.btn-record {
-  &::after {
-    font-family: fa-solid;
-    content: '\f8d9';
-    color: #D5CABD;
-    font-size: 37px;
-}  
-} 
-.record{
-  background-color: #FF0045;
-}
-.record-play{
+  .btn-play {
+    &::after {
+      font-family: fa-solid;
+      content: "\f144";
+      color: #d5cabd;
+      font-size: 60px;
+    }
+  }
+  .play {
+    background-color: #00c9a6;
+  }
+  .stop {
+    &::after {
+      font-family: fa-solid;
+      content: "\f28d";
+      color: $clr3;
+      font-size: 60px;
+    }
+  }
+  .btn-record {
+    &::after {
+      font-family: fa-solid;
+      content: "\f8d9";
+      color: #d5cabd;
+      font-size: 37px;
+    }
+  }
+  .record {
+    background-color: #ff0045;
+  }
+  .record-play {
     border-radius: 12px;
-    font-family:archi;
-    // font-family:mochiy,Blinker, Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-    color: #D5CABD;
-}
+    font-family: archi, mochiy, Blinker, Circular, -apple-system;
+    color: #d5cabd;
+  }
 }
