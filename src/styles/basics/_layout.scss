@@ -1,0 +1,33 @@
+@mixin layout-columns($Width: 960px) {
+    grid-template-columns:
+        minmax(0rem, 1fr)
+        minmax(auto, 500px)
+        // minmax(auto, $Width)
+        minmax(0rem, 1fr);
+}
+
+.main-layout {
+    display: grid;
+    > * {
+        grid-column: 2;
+    }
+
+    @include for-mobile-layout {
+        grid-template-columns: minmax(1rem, 1fr) minmax(auto, 400px) minmax(1rem, 1fr);
+        @media screen {
+            .card-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .btn-power {
+                margin: 5px;
+            }
+        }
+    }
+    @include for-narrow-layout {
+        grid-template-columns: minmax(1rem, 1fr) minmax(auto, $break-normal) minmax(1rem, 1fr);
+    }
+
+    @include for-wide-layout {
+        grid-template-columns: minmax(1rem, 1fr) minmax(auto, 1900px) minmax(1rem, 1fr);
+    }
+}

@@ -1,0 +1,68 @@
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px 3px;
+}
+
+.btn-audio {
+    font-family: mochiy, Blinker, Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: $clr2;
+    border: none;
+    cursor: pointer;
+    .pad-name {
+        width: 42px;
+        height: 10px;
+        font-size: 0.8rem;
+        z-index: 2;
+    }
+    &::after {
+        font-family: fa-solid;
+        content: "\f51f";
+        color: $clr3;
+        // color: #FBEAFF;
+        font-size: 100px;
+        // #00C9A6 הצבע לקלאס הדינאמי
+    }
+ 
+    &:hover {
+        // opacity: 0.5;
+        // border: 1px solid #fcf6fd;
+        background-color: $clr5;
+    }
+}
+.active{
+
+    background-color: cyan;
+    .ffk{
+        background-color: cyan;
+    }
+}
+.sbs{
+    background-color: cyan;
+}
+.bss{
+    background-color: cyan;
+}
+.egr{
+    background-color: cyan;
+}
+.ssh{
+    background-color: cyan;
+}
+.gtu{
+    background-color: cyan;
+}
+.mps{
+    background-color: cyan;
+}
+.pge{
+    background-color: cyan;
+}
+.ssr{
+    background-color: cyan;
+}
