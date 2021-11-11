@@ -19,7 +19,6 @@ export const padsService = {
 }
 
 async function query() {
-    console.log(sounds, 'sounds');
     return sounds
 }
 
@@ -33,9 +32,7 @@ function playSound(pads) {
 
 function stopSound(pads) {
     pads.forEach((pad) => {
-        console.log(pad, "stop");
         pad.audio.pause();
         pad.audio.currentTime = 0;
-
     });
 }
